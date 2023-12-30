@@ -46,7 +46,7 @@ function App() {
 
   return (
     <>
-      <h1>News Ranking Tool</h1>
+      <h1>Khabar Nama</h1>
       <h3>This tool is trained on DAWN News dataset.</h3>
       {/* Input Feild for query */}
       <TextField
