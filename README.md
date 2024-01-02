@@ -33,13 +33,13 @@ The project employs various preprocessing techniques to enhance data quality:
 
 ## Contributors
 
-- [Your Name]
-- [Other Team Members]
+- Saad Dastgir
+- Muhammad Umair khan 
+- Ahsan Abbasi
 
 ## Acknowledgments
 
-Special thanks to the sklearn library for providing robust NLP tools and enhancing the project's capabilities.
+- Special thanks to the sklearn library for providing robust NLP tools and enhancing the project's capabilities.
+- Thanks to Dr. Arif ur rehman(HOD CS Bahria University) for Supervising the Project.
 
-## License
 
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
