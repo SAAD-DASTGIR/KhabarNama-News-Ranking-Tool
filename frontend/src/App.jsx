@@ -46,8 +46,8 @@ function App() {
 
   return (
     <>
-      <h1>Khabar Nama</h1>
-      <h3>This tool is trained on DAWN News dataset.</h3>
+      <h1 className="khabar">Khabar Nama</h1>
+      <h3>This tool is Trained on 250,000+ stories from DAWN News</h3>
       {/* Input Feild for query */}
       <TextField
         value={query}
@@ -66,10 +66,17 @@ function App() {
           marginTop: "20px",
           marginRight: "20px",
           padding: "15px",
+          width: "150px",
         }}
       >
         Search
       </Button>
+      {news.length === 0 && (
+      <img
+        src="https://image.lexica.art/full_webp/8d80539b-6208-49f7-8c79-6eb8cabe065d"
+        className="image"
+      />
+    )}
       {/* Show/Hide discription button */}
       {news.length > 0 ? (
         <Button
@@ -81,7 +88,7 @@ function App() {
           }}
           variant="outlined"
         >
-          {expanded ? "Hide Discription" : "Show Discriptions"}
+          {expanded ? "Hide Description" : "Show Descriptions"}
         </Button>
       ) : null}
       {/* Animation Progress */}
@@ -101,7 +108,20 @@ function App() {
           <CardContent>
             <p style={{ fontSize: "20px", fontWeight: "bold" }}>{a.headline}</p>
             <br></br>
-            <p style={{ fontSize: "15px" }}>Relevance Score: {a.score}</p>{" "}
+            <p style={{ fontSize: "15px" }}>
+  <span
+    style={{
+      backgroundColor: "#007BFF", // Blue background color
+      color: "#FFFFFF", // White font color
+      padding: "8px", // Padding for spacing
+      borderRadius: "5px", // Rounded corners
+      // fontWeight: "bold", // Bold font weight
+    }}
+    >
+    Relevance Score:{" "}
+    {a.score}
+  </span>
+</p>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <p style={{ paddingTop: "10px", textAlign: "justify" }}>
                 {a.short_description}

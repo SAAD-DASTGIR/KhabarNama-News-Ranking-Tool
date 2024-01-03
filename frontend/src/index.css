@@ -2,3 +2,41 @@
   margin: 0;
   padding: 0;
 }
+
+.khabar {
+  font-size: 3rem;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.image {
+  position: fixed;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+  width: 45%; /* Adjust the width percentage as needed */
+  max-width: 450px; /* Set a maximum width to ensure it doesn't become too wide */
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: -50px;
+}
+
+/* Add styles for the image inside the card */
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
